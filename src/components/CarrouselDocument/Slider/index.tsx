@@ -9,7 +9,6 @@ import {
 } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Flex, Heading, Text, useBreakpointValue, Box } from '@chakra-ui/react'
-import Reveal from 'react-reveal/Reveal'
 
 interface DataProps {
   data: Documents[]
@@ -71,7 +70,7 @@ export default function Slider() {
 
   return (
     <Swiper
-      speed={1000}
+      speed={1400}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
@@ -126,12 +125,12 @@ export default function Slider() {
                 bgImage={`url('/images/${docs.image}.png')`}
                 bgSize="contain"
                 bgRepeat="no-repeat"
-                maxW={['300px', '300px', '300px']}
-                h={['400px', '400px', '450px', '425px']}
+                maxW={['200px', '220x', '270px']}
+                h={['400px', '400px', '450px', '390px']}
                 align="center"
                 justify="center"
                 direction="column"
-                mt="1rem"
+                mt={['1rem', '1rem', '1rem', '2.4rem']}
                 bgColor="transparent"
                 mx="auto"
                 boxShadow="2xl"
@@ -142,7 +141,7 @@ export default function Slider() {
                   fontFamily="Raleway"
                   fontWeight="700"
                   textAlign="center"
-                  mt="35rem"
+                  mt={['35rem', '35rem', '35rem', '30rem']}
                 >
                   {docs.title}
                 </Heading>

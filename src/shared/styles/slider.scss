@@ -54,6 +54,12 @@ div.swiper.swiper-testimonials-initialized {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50px !important;
+  }
+}
+
 .swiper-pagination-bullet-active {
   background-color: #cc3366 !important;
 }
@@ -121,17 +127,17 @@ div.css-34q6yt {
 
 @media (min-width: 1080px) {
   div.swiper-slide.swiper-slide-visible.swiper-slide-active {
-    transition: transform 1s ease-in;
-    transform: scale(1.03);
+    transition: transform 0.8s linear;
+    transform: scale(1.1);
   }
 
   div.swiper-slide.swiper-slide-visible.swiper-slide-next {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.8s linear;
     transform: scale(1);
   }
 
   div.swiper-slide.swiper-slide-visible.swiper-slide-prev {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.8s linear;
     transform: scale(1);
   }
 
