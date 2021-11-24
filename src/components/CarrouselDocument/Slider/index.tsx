@@ -70,7 +70,7 @@ export default function Slider() {
 
   return (
     <Swiper
-      speed={1400}
+      speed={1500}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
