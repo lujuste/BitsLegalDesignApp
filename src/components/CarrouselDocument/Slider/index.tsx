@@ -135,7 +135,7 @@ export default function Slider() {
                 bgColor="transparent"
                 mx="auto"
                 boxShadow="2xl"
-                transition="ease-out"
+                transition="linear"
               >
                 <Heading
                   fontSize="20px"
