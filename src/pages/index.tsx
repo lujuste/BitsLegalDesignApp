@@ -8,30 +8,22 @@ import Statistics from '../components/Statistics'
 import Testimonials from '../components/Testimonials'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-
-import { lazy } from '@loadable/component'
 import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
 
-const OtherComponent = dynamic(() => import('../components/HomeScreen'), {
-  loading: () => (
-    <Flex
-      w="100%"
-      maxW="1400"
-      justify="center"
-      align="center"
-      mx="auto"
-      h="100vh"
-    >
-      <Spinner
-        thickness="4px"
-        speed="0.65s"
-        emptyColor="gray.200"
-        color="blue.500"
-        size="xl"
-      />
-    </Flex>
-  ),
-})
+// const OtherComponent = dynamic(() => import('../components/HomeScreen'), {
+// ssr: false,
+// loading: () => (
+// <Flex w="100%" maxW="100vw" h="100vh" justify="center" align="center">
+// <Spinner
+// thickness="4px"
+// speed="0.65s"
+// emptyColor="gray.200"
+// color="pink.900"
+// size="xl"
+// />
+//</Flex>
+// ),
+// })
 
 const Home: NextPage = () => {
   return (
@@ -68,8 +60,7 @@ const Home: NextPage = () => {
         <meta name="twitter:card" content="Legal Design" key="twcard" />
         <meta name="twitter:creator" content="Bits Academy" key="twhandle" />
       </Head>
-
-      <OtherComponent />
+      <HomeScreen />
       <Cards />
       <Customers />
       <CarrouselDocument />

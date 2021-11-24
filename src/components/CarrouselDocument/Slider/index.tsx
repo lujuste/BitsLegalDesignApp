@@ -6,68 +6,68 @@ import {
   EffectCreative,
   Autoplay,
   Parallax,
-} from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Flex, Heading, Text, useBreakpointValue, Box } from "@chakra-ui/react";
-import Reveal from "react-reveal/Reveal";
+} from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Flex, Heading, Text, useBreakpointValue, Box } from '@chakra-ui/react'
+import Reveal from 'react-reveal/Reveal'
 
 interface DataProps {
-  data: Documents[];
+  data: Documents[]
 }
 
 interface Documents {
-  title: string;
-  image: string;
+  title: string
+  image: string
 }
 const data = [
   {
-    title: "Contrato de prestação de serviços",
-    image: "contrato-prestacao-servico",
+    title: 'Contrato de prestação de serviços',
+    image: 'contrato-prestacao-servico',
   },
   {
-    title: "Contrato de procuração",
-    image: "contrato-procuracao",
+    title: 'Contrato de procuração',
+    image: 'contrato-procuracao',
   },
   {
-    title: "Códigos",
-    image: "contrato-etica",
+    title: 'Códigos',
+    image: 'contrato-etica',
   },
   {
-    title: "Políticas",
-    image: "politica-cookies",
+    title: 'Políticas',
+    image: 'politica-cookies',
   },
   {
-    title: "Política de privacidade",
-    image: "politica-privacidade",
+    title: 'Política de privacidade',
+    image: 'politica-privacidade',
   },
   {
-    title: "Contrato de prestação de serviços",
-    image: "contrato-prestacao-servico",
+    title: 'Contrato de prestação de serviços',
+    image: 'contrato-prestacao-servico',
   },
   {
-    title: "Contrato de procuração",
-    image: "contrato-procuracao",
+    title: 'Contrato de procuração',
+    image: 'contrato-procuracao',
   },
   {
-    title: "Códigos",
-    image: "contrato-etica",
+    title: 'Códigos',
+    image: 'contrato-etica',
   },
   {
-    title: "Políticas",
-    image: "politica-cookies",
+    title: 'Políticas',
+    image: 'politica-cookies',
   },
   {
-    title: "Política de privacidade",
-    image: "politica-privacidade",
+    title: 'Política de privacidade',
+    image: 'politica-privacidade',
   },
-];
+]
 
 export default function Slider() {
   const isWideVersion = useBreakpointValue({
     base: false,
     lg: true,
     xl: true,
-  });
+  })
 
   return (
     <Swiper
@@ -75,7 +75,7 @@ export default function Slider() {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      style={{ width: "100%", flex: "1" }}
+      style={{ width: '100%', flex: '1' }}
       initialSlide={2}
       modules={[
         Navigation,
@@ -95,26 +95,26 @@ export default function Slider() {
       }}
       parallax={true}
       breakpoints={{
-        "380px": {
+        '380px': {
           slidesPerView: 1,
         },
 
-        "812px": {
+        '812px': {
           slidesPerView: 1,
         },
 
-        "1024": {
+        '1024': {
           slidesPerView: 3,
           spaceBetween: 0,
         },
 
-        "1100": {
+        '1100': {
           slidesPerView: 4,
           spaceBetween: 0,
         },
       }}
     >
-      {data.map((docs) => (
+      {data.map(docs => (
         <SwiperSlide>
           {({ isActive }) =>
             isActive ? (
@@ -126,8 +126,8 @@ export default function Slider() {
                 bgImage={`url('/images/${docs.image}.png')`}
                 bgSize="contain"
                 bgRepeat="no-repeat"
-                maxW={["300px", "300px", "320px"]}
-                h={["400px", "400px", "450px", "450px"]}
+                maxW={['300px', '300px', '300px']}
+                h={['400px', '400px', '450px', '425px']}
                 align="center"
                 justify="center"
                 direction="column"
@@ -150,19 +150,20 @@ export default function Slider() {
             ) : (
               <Flex
                 w="100%"
-                maxW={["200px", "220x", "240px"]}
+                maxW={['200px', '220x', '240px']}
                 bgImage={`url('/images/${docs.image}.png')`}
                 bgSize="cover"
                 bgRepeat="no-repeat"
-                h={["400px", "400px", "450px", "360px"]}
+                h={['400px', '400px', '450px', '360px']}
                 align="center"
                 justify="center"
                 direction="column"
-                mt={["0", "0", "3rem"]}
+                mt={['0', '0', '3rem']}
                 bgColor="pink.900"
                 mx="auto"
                 position="relative"
                 boxShadow="md"
+                transition="ease-in"
               >
                 <Box
                   position="absolute"
@@ -180,5 +181,5 @@ export default function Slider() {
         </SwiperSlide>
       ))}
     </Swiper>
-  );
+  )
 }
