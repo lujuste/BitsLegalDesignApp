@@ -7,8 +7,9 @@ import {
   GridItem,
   Icon,
   useBreakpointValue,
-  Image,
 } from "@chakra-ui/react";
+
+import Image from "next/image";
 
 import ContractBeforeIcon from "./ContractBeforeIcon";
 import ContractAfterIcon from "./ContractAfterIcon";
@@ -89,38 +90,54 @@ const LegalDesign: NextPage = () => {
                 px="2rem"
                 w="100%"
                 maxW="1400"
-                justify="space-around"
+                justify="center"
                 mx="auto"
                 mt="2rem"
               >
-                <Flex flexDir="column">
+                <Flex mt="-4.5rem" flexDir="column">
                   <Text
                     fontSize="25px"
                     fontWeight="600"
                     fontFamily="Raleway"
                     color="pink.900"
-                    transform="translateY(40px)"
+                    transform="translateY(100px)"
                     mx="auto"
-                    pl="13rem"
+                    pl="10rem"
                   >
                     antes
                   </Text>
-                  <Icon as={ContractBeforeIcon} />
+                  <Flex mr="1rem">
+                    <Image
+                      width="500px"
+                      height="700px"
+                      src="/images/contract-before.svg"
+                      alt=""
+                      priority={true}
+                    />
+                  </Flex>
                 </Flex>
 
-                <Flex flexDir="column">
+                <Flex mt="-4.5rem" flexDir="column">
                   <Text
                     fontSize="25px"
                     fontWeight="600"
                     fontFamily="Raleway"
                     color="pink.900"
-                    transform="translateY(40px)"
+                    transform="translateY(100px)"
                     mr="auto"
-                    pl="10rem"
+                    pl="8rem"
                   >
                     depois
                   </Text>
-                  <Icon as={ContractAfterIconDesktop} />
+                  <Flex ml="1rem">
+                    <Image
+                      width="500px"
+                      height="700px"
+                      src="/images/desktop-background-red.svg"
+                      alt=""
+                      priority={true}
+                    />
+                  </Flex>
                 </Flex>
               </Flex>
             </>

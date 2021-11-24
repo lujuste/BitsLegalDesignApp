@@ -31,22 +31,16 @@ export default function Header() {
     xl: true,
   });
 
-  const [isScroll, setIsScroll] = useState(false);
-
   const { isOpen, onOpen, onClose } = useSidebarDrawer();
-
   const [shouldShowActions, setShouldShowActions] = useState(false);
-
   const [lastYPos, setLastYPos] = useState(0);
 
   useEffect(() => {
     function handleScroll() {
       const yPos = window.scrollY;
       const isScrollingUp = yPos > 30;
-
       setShouldShowActions(isScrollingUp);
     }
-
     window.addEventListener("scroll", handleScroll, false);
 
     return () => {
@@ -90,7 +84,7 @@ export default function Header() {
               {isWideVersion ? (
                 <>
                   <Flex
-                    ml="3rem"
+                    ml="7rem"
                     as="nav"
                     maxW="500px"
                     flex="1"
