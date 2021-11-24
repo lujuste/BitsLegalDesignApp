@@ -4,19 +4,19 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
-} from "next/document";
-import * as React from "react";
+} from 'next/document'
+import * as React from 'react'
 
-import emotionCache from "../../packages/v7/lib/emotion-cache";
+import emotionCache from '../lib/emotion-cache'
 
-import createEmotionServer from "@emotion/server/create-instance";
+import createEmotionServer from '@emotion/server/create-instance'
 
-const { extractCritical } = createEmotionServer(emotionCache);
+const { extractCritical } = createEmotionServer(emotionCache)
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
-    const styles = extractCritical(initialProps.html);
+    const initialProps = await Document.getInitialProps(ctx)
+    const styles = extractCritical(initialProps.html)
     return {
       ...initialProps,
       styles: [
@@ -24,10 +24,10 @@ export default class MyDocument extends Document {
         <style
           key="emotion-css"
           dangerouslySetInnerHTML={{ __html: styles.css }}
-          data-emotion-css={styles.ids.join(" ")}
+          data-emotion-css={styles.ids.join(' ')}
         />,
       ],
-    };
+    }
   }
   render() {
     return (
@@ -47,6 +47,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }

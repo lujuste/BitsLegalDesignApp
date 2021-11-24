@@ -1,16 +1,37 @@
-import { NextPage } from "next";
-import HomeScreen from "../components/HomeScreen";
-import Cards from "../components/Cards";
-import Customers from "../components/Customers";
-import CarrouselDocument from "../components/CarrouselDocument";
-import Statistics from "../components/Statistics";
-import Testimonials from "../components/Testimonials";
-import Head from "next/head";
+import { NextPage } from 'next'
+import { Flex, Spinner } from '@chakra-ui/react'
+import HomeScreen from '../components/HomeScreen'
+import Cards from '../components/Cards'
+import Customers from '../components/Customers'
+import CarrouselDocument from '../components/CarrouselDocument'
+import Statistics from '../components/Statistics'
+import Testimonials from '../components/Testimonials'
+import Head from 'next/head'
+import dynamic from 'next/dynamic'
 
-import { lazy } from "@loadable/component";
-import ShouldMessageCookies from "../shared/components/ShouldMessageCookies";
+import { lazy } from '@loadable/component'
+import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
 
-const OtherComponent = lazy(() => import("../components/HomeScreen"));
+const OtherComponent = dynamic(() => import('../components/HomeScreen'), {
+  loading: () => (
+    <Flex
+      w="100%"
+      maxW="1400"
+      justify="center"
+      align="center"
+      mx="auto"
+      h="100vh"
+    >
+      <Spinner
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="blue.500"
+        size="xl"
+      />
+    </Flex>
+  ),
+})
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +48,7 @@ const Home: NextPage = () => {
           content="Legal Design - Bits Academy"
           key="ogtitle"
         />
-        +{" "}
+        +{' '}
         <meta
           property="og:description"
           content="Entender um documento jurídico pode ser uma tarefa muito complexa. Com o Legal Design, além de tornar a comunicação mais fácil, você gera mais vendas, aumenta a satisfação dos clientes, elimina a burocracia, evita inadimplemento e torna melhor a experiência do usuário."
@@ -35,7 +56,7 @@ const Home: NextPage = () => {
         />
         <meta
           property="og:url"
-          content={"http://localhost:3000/"}
+          content={'http://localhost:3000/'}
           key="ogurl"
         />
         <meta
@@ -48,7 +69,7 @@ const Home: NextPage = () => {
         <meta name="twitter:creator" content="Bits Academy" key="twhandle" />
       </Head>
 
-      <HomeScreen />
+      <OtherComponent />
       <Cards />
       <Customers />
       <CarrouselDocument />
@@ -56,7 +77,7 @@ const Home: NextPage = () => {
       <Testimonials />
       <ShouldMessageCookies />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
