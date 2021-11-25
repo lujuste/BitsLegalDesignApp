@@ -1,5 +1,5 @@
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import {
   Flex,
   Heading,
@@ -8,9 +8,9 @@ import {
   Box,
   VStack,
   Avatar,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
-import Fade from "react-reveal/Fade";
+import Fade from 'react-reveal/Fade'
 
 export default function SliderTestimonialsMobile() {
   return (
@@ -18,7 +18,7 @@ export default function SliderTestimonialsMobile() {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      style={{ width: "100%", flex: "1" }}
+      style={{ width: '100%', flex: '1' }}
       initialSlide={2}
       modules={[Navigation, Pagination, A11y]}
       spaceBetween={5}
@@ -33,7 +33,7 @@ export default function SliderTestimonialsMobile() {
           w="100%"
           px="2rem"
           maxW="608px"
-          h={["478px", "478px", "438px"]}
+          h={['478px', '478px', '488px']}
           mx="auto"
           mt="-2rem"
         >
@@ -50,9 +50,9 @@ export default function SliderTestimonialsMobile() {
               color="white"
               maxW="400px"
               w="100%"
-              fontSize={["15px", "15px", "16px"]}
+              fontSize={['15px', '15px', '16px']}
               textAlign="center"
-              px={["20px", "20px", "0"]}
+              px={['20px', '20px', '0']}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
               sint blanditiis dolor similique possimus animi numquam deleniti.
@@ -95,9 +95,9 @@ export default function SliderTestimonialsMobile() {
               color="white"
               maxW="400px"
               w="100%"
-              fontSize={["15px", "15px", "16px"]}
+              fontSize={['15px', '15px', '16px']}
               textAlign="center"
-              px={["20px", "20px", "0"]}
+              px={['20px', '20px', '0']}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
               sint blanditiis dolor similique possimus animi numquam deleniti.
@@ -140,9 +140,9 @@ export default function SliderTestimonialsMobile() {
               color="white"
               maxW="400px"
               w="100%"
-              fontSize={["15px", "15px", "16px"]}
+              fontSize={['15px', '15px', '16px']}
               textAlign="center"
-              px={["20px", "20px", "0"]}
+              px={['20px', '20px', '0']}
             >
               "Curso muito rico e completo para um primeiro passo no mundo do
               Legal Design, com exemplos práticos, professores atenciosos. Aulas
@@ -191,9 +191,9 @@ export default function SliderTestimonialsMobile() {
               color="white"
               maxW="400px"
               w="100%"
-              fontSize={["15px", "15px", "16px"]}
+              fontSize={['15px', '15px', '16px']}
               textAlign="center"
-              px={["20px", "20px", "0"]}
+              px={['20px', '20px', '0']}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
               sint blanditiis dolor similique possimus animi numquam deleniti.
@@ -236,9 +236,9 @@ export default function SliderTestimonialsMobile() {
               color="white"
               maxW="400px"
               w="100%"
-              fontSize={["15px", "15px", "16px"]}
+              fontSize={['15px', '15px', '16px']}
               textAlign="center"
-              px={["20px", "20px", "0"]}
+              px={['20px', '20px', '0']}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
               sint blanditiis dolor similique possimus animi numquam deleniti.
@@ -256,5 +256,5 @@ export default function SliderTestimonialsMobile() {
         </Flex>
       </SwiperSlide>
     </Swiper>
-  );
+  )
 }

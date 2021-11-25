@@ -21,7 +21,7 @@ export default function CarrouselDocument() {
             justify="center"
             flexDir="column"
             w="100%"
-            h="800px"
+            h={['800px']}
             maxW={1250}
             mx="auto"
             align="center"
@@ -35,7 +35,7 @@ export default function CarrouselDocument() {
                 fontSize={['30px', '32px', '38px', '42px', '48px']}
                 textAlign={['center', 'center', 'center', 'center', 'center']}
                 maxW={['320px', '320px', '500px', '500px', '1000px']}
-                mt={['3rem', '3rem', '3rem', '2rem', '2rem']}
+                mt={['3rem', '3rem', '3rem', '2rem', '2rem', '2rem']}
                 w="100%"
                 mb={['1rem', '1rem', '0rem']}
                 py="3rem"
@@ -59,7 +59,7 @@ export default function CarrouselDocument() {
               justify="center"
               align="center"
               flexDir="column"
-              h="770px"
+              h={['770px', '775px', '750px', '800px']}
               py="1.5rem"
               px="1rem"
             >
@@ -71,7 +71,7 @@ export default function CarrouselDocument() {
                   textAlign={['center', 'center']}
                   maxW={['340px', '349px']}
                   w="100%"
-                  mb={['1rem', '1rem', '1rem']}
+                  mb={['2rem', '2rem', '1rem']}
                 >
                   Os tipos de{' '}
                   <Text as="span" color="pink.900">

@@ -1,6 +1,6 @@
-import { Flex } from "@chakra-ui/react";
-import StatisticItem from "./StatisticItem";
-import Reveal from "react-reveal/Reveal";
+import { Flex } from '@chakra-ui/react'
+import StatisticItem from './StatisticItem'
+import Reveal from 'react-reveal/Reveal'
 
 export default function Statistics() {
   return (
@@ -11,19 +11,20 @@ export default function Statistics() {
           align="center"
           mx="auto"
           w="100%"
-          h={["600px", "600px", "300px"]}
+          h={['600px', '600px', '300px']}
           bgColor="pink.900"
+          mt={['2rem', '2rem', '2rem', '1rem']}
         >
           <Flex
             as="main"
             w="100%"
-            flexDir={["column", "column", "row"]}
-            justify={["space-evenly", "space-evenly", "space-around"]}
+            flexDir={['column', 'column', 'row']}
+            justify={['space-evenly', 'space-evenly', 'space-around']}
             align="center"
             maxW={1400}
             h="100%"
             mx="auto"
-            mt={["-1rem", "-1rem", "1rem", "1rem", "1rem"]}
+            mt={['-1rem', '-1rem', '1rem', '1rem', '1rem']}
           >
             <StatisticItem
               number={2000}
@@ -42,5 +43,5 @@ export default function Statistics() {
         </Flex>
       </Reveal>
     </>
-  );
+  )
 }

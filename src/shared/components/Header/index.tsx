@@ -82,9 +82,9 @@ export default function Header() {
               px="6"
               align="center"
             >
-              <Flex mt="-0.3rem">
-                <Link href="/">
-                  <Icon as={logoBits} w="auto" h="auto" />
+              <Flex cursor="pointer" mt="-0.3rem">
+                <Link href="/" passHref>
+                  <Icon cursor="pointer" as={logoBits} w="auto" h="auto" />
                 </Link>
               </Flex>
 
@@ -196,7 +196,7 @@ export default function Header() {
             px="6"
             align="center"
           >
-            <Flex mt="-0.3rem">
+            <Flex cursor="pointer" mt="-0.3rem">
               <Link href="/" passHref>
                 <Icon cursor="pointer" as={logoBits} w="auto" h="auto" />
               </Link>

@@ -76,7 +76,7 @@ export default function SliderMobile() {
             mx="auto"
           >
             <Heading
-              mt="35rem"
+              mt="34rem"
               textAlign="center"
               fontSize="16px"
               fontFamily="Raleway"

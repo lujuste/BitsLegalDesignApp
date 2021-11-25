@@ -54,7 +54,7 @@ div.swiper.swiper-testimonials-initialized {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1029px) {
   div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 50px !important;
   }
@@ -161,5 +161,11 @@ div.css-34q6yt {
 
   p.chakra-text.css-aakt59 {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .css-14cku8y {
+    height: 650px !important;
   }
 }
