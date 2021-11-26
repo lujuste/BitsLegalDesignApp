@@ -6,7 +6,7 @@ import LawOfficeIcon from './components/LawOfficeIcon'
 export default function ForWhoLegalDesign() {
   return (
     <Flex
-      mt={['0', '0', '0', '-3.5rem']}
+      mt={['-5rem', '-5rem', '-5rem', '-5rem']}
       py="3.5rem"
       w="100%"
       bgColor="#F8F9FA"
@@ -20,7 +20,7 @@ export default function ForWhoLegalDesign() {
             mx="auto"
             textAlign="center"
             fontFamily="Raleway"
-            fontSize="3rem"
+            fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
             mb="3.5rem"
             fontWeight="600"
           >
@@ -39,7 +39,7 @@ export default function ForWhoLegalDesign() {
               'repeat(3, 1fr)',
             ]}
             mx="auto"
-            gap={['0', '0', '0', '0', '20']}
+            gap={['12', '12', '12', '20', '20']}
             mb="3rem"
           >
             <Flex align="center" maxW="322px" flexDir="column">
