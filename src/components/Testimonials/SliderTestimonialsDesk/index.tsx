@@ -57,9 +57,17 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  className="bits-avatar"
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                  sx={{
+                    color: 'white !important',
+                  }}
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
-                  Bits Academy5
+                  Bits Academy
                 </Heading>
                 <Text fontSize="16px" fontWeight="400">
                   Profissão
@@ -92,7 +100,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -133,7 +148,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy5
                 </Heading>
@@ -168,7 +190,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -213,6 +242,9 @@ export default function SliderTestimonialsDesk() {
                 <Avatar
                   w="100px"
                   h="100px"
+                  sx={{
+                    color: 'white !important',
+                  }}
                   name="Bits Academy"
                   src="/images/edivane-liandro.webp"
                 />
@@ -250,7 +282,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -291,7 +330,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -326,7 +372,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -367,7 +420,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
@@ -402,7 +462,14 @@ export default function SliderTestimonialsDesk() {
                 </Text>
               </Box>
               <VStack transform="translateY(-40px)">
-                <Avatar size="xl" name="Bits Academy" src="https" />
+                <Avatar
+                  sx={{
+                    color: 'white !important',
+                  }}
+                  size="xl"
+                  name="Bits Academy"
+                  src="https"
+                />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Bits Academy
                 </Heading>
