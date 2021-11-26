@@ -1,14 +1,14 @@
-import { Flex, Text, Button } from "@chakra-ui/react";
-import { ReactElement } from "react";
-import SpinButton from "../SpinButton";
-import { useState } from "react";
-import ReactCardFlip from "react-card-flip";
+import { Flex, Text, Button } from '@chakra-ui/react'
+import { ReactElement } from 'react'
+import SpinButton from '../SpinButton'
+import { useState } from 'react'
+import ReactCardFlip from 'react-card-flip'
 
 interface CardMobileProps {
-  title: string;
-  description: string;
-  image: string;
-  children: ReactElement;
+  title: string
+  description: string
+  image: string
+  children: ReactElement
 }
 
 export default function CardMobile({
@@ -18,10 +18,10 @@ export default function CardMobile({
   children,
   ...rest
 }: CardMobileProps) {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false)
 
   function handleClick() {
-    setIsFlipped(!isFlipped);
+    setIsFlipped(!isFlipped)
   }
 
   return (
@@ -33,7 +33,7 @@ export default function CardMobile({
           w="100%"
           maxW="270px"
           h="290px"
-          bgImage={`/images/${image}.png`}
+          bgImage={`/images/${image}.webp`}
           bgSize="cover"
           bgRepeat="no-repeat"
           justify="center"
@@ -46,18 +46,18 @@ export default function CardMobile({
             w="auto"
             h="auto"
             bgColor="transparent"
-            _hover={{ bgColor: "transparent" }}
+            _hover={{ bgColor: 'transparent' }}
             border="none"
             _focus={{
-              background: "transparent",
-              borderColor: "none",
-              border: "none",
+              background: 'transparent',
+              borderColor: 'none',
+              border: 'none',
             }}
             onClick={handleClick}
             _active={{
-              background: "transparent",
-              borderColor: "none",
-              border: "none",
+              background: 'transparent',
+              borderColor: 'none',
+              border: 'none',
             }}
           >
             <SpinButton />
@@ -88,19 +88,19 @@ export default function CardMobile({
           boxShadow="2xl"
         >
           <Button
-            _hover={{ bgColor: "transparent" }}
+            _hover={{ bgColor: 'transparent' }}
             position="absolute"
             bottom="7"
             onClick={handleClick}
             _active={{
-              background: "transparent",
-              borderColor: "none",
-              border: "none",
+              background: 'transparent',
+              borderColor: 'none',
+              border: 'none',
             }}
             _focus={{
-              background: "transparent",
-              borderColor: "none",
-              border: "none",
+              background: 'transparent',
+              borderColor: 'none',
+              border: 'none',
             }}
           >
             <SpinButton />
@@ -116,5 +116,5 @@ export default function CardMobile({
         </Flex>
       </ReactCardFlip>
     </>
-  );
+  )
 }
