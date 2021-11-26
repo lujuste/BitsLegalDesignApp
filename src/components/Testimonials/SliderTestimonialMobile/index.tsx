@@ -152,9 +152,10 @@ export default function SliderTestimonialsMobile() {
           </Box>
           <VStack transform="translateY(-40px)">
             <Avatar
-              size="xl"
+              w="100px"
+              h="100px"
               name="Bits Academy"
-              src="/images/edivane-liandro.png"
+              src="/images/edivane-liandro.webp"
             />
             <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
               Edivane Liandro

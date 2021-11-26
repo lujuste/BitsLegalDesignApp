@@ -211,7 +211,8 @@ export default function SliderTestimonialsDesk() {
               </Box>
               <VStack transform="translateY(-40px)">
                 <Avatar
-                  size="xl"
+                  w="100px"
+                  h="100px"
                   name="Bits Academy"
                   src="/images/edivane-liandro.webp"
                 />

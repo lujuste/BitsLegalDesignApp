@@ -67,7 +67,7 @@ export default function SliderMobile() {
             maxW={['340px', '349px']}
             h={['500px', '500px', '450px', '450px']}
             align="center"
-            bgImage={`url('/images/${docs.image}.png')`}
+            bgImage={`url('/images/${docs.image}.webp')`}
             bgSize="contain"
             bgRepeat="no-repeat"
             justify="center"

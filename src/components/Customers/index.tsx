@@ -1,11 +1,6 @@
-import {
-  Flex,
-  Text,
-  Box,
-  useBreakpointValue,
-  Heading,
-  Image,
-} from '@chakra-ui/react'
+import { Flex, Text, Box, useBreakpointValue, Heading } from '@chakra-ui/react'
+
+import Image from 'next/image'
 
 import {
   MotionGrid,
@@ -298,8 +293,8 @@ export default function Customers() {
               >
                 <Image
                   alt={docs.description}
-                  w="100px"
-                  h="100px"
+                  width="100px"
+                  height="100px"
                   src={`/images/${docs.image}.svg`}
                 />
               </Box>

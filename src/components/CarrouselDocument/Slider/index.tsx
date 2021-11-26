@@ -116,7 +116,7 @@ export default function Slider() {
                 as="div"
                 ml="auto"
                 w="100%"
-                bgImage={`url('/images/${docs.image}.png')`}
+                bgImage={`url('/images/${docs.image}.webp')`}
                 bgSize="contain"
                 bgRepeat="no-repeat"
                 maxW={['200px', '220x', '270px']}
@@ -144,7 +144,7 @@ export default function Slider() {
               <Flex
                 w="100%"
                 maxW={['200px', '220x', '240px']}
-                bgImage={`url('/images/${docs.image}.png')`}
+                bgImage={`url('/images/${docs.image}.webp')`}
                 bgSize="cover"
                 bgRepeat="no-repeat"
                 h={['400px', '400px', '450px', '360px']}
