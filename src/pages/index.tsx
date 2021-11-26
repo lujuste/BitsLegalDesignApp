@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-
+import { Flex, Spinner } from '@chakra-ui/react'
 import HomeScreen from '../components/HomeScreen'
 import Cards from '../components/Cards'
 import Customers from '../components/Customers'
@@ -9,6 +9,7 @@ import Testimonials from '../components/Testimonials'
 import Head from 'next/head'
 
 import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
+import dynamic from 'next/dynamic'
 
 // const OtherComponent = dynamic(() => import('../components/HomeScreen'), {
 // ssr: false,
@@ -24,6 +25,21 @@ import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
 //</Flex>
 // ),
 // })
+
+const CustomersDynamic = dynamic(() => import('../components/Customers'), {
+  ssr: false,
+  loading: () => (
+    <Flex w="100%" maxW="100vw" h="100vh" justify="center" align="center">
+      <Spinner
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="pink.900"
+        size="xl"
+      />
+    </Flex>
+  ),
+})
 
 const Home: NextPage = () => {
   return (
@@ -62,7 +78,7 @@ const Home: NextPage = () => {
       </Head>
       <HomeScreen />
       <Cards />
-      <Customers />
+      <CustomersDynamic />
       <CarrouselDocument />
       <Statistics />
       <Testimonials />

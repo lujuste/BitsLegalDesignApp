@@ -10,5 +10,11 @@
     "files": [
       "static/chunks/src_components_HomeScreen_GroupContract_index_tsx.js"
     ]
+  },
+  "index.tsx -> ../components/Customers": {
+    "id": "./src/components/Customers/index.tsx",
+    "files": [
+      "static/chunks/src_components_Customers_index_tsx.js"
+    ]
   }
 }
