@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { NextPage } from 'next'
 import {
   Flex,
   Text,
@@ -7,16 +7,16 @@ import {
   GridItem,
   Icon,
   useBreakpointValue,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
-import Image from "next/image";
+import Image from 'next/image'
 
-import ContractBeforeIcon from "./ContractBeforeIcon";
-import ContractAfterIcon from "./ContractAfterIcon";
-import ContractAfterIconDesktop from "./components/ContractAfterMobileIcon";
-import WhyLegalDesign from "./components/WhyLegalDesign";
-import Diagram from "./components/Diagram";
-import MoreBusiness from "./components/MoreBusiness";
+import ContractBeforeIcon from './ContractBeforeIcon'
+import ContractAfterIcon from './ContractAfterIcon'
+import ContractAfterIconDesktop from './components/ContractAfterMobileIcon'
+import WhyLegalDesign from './components/WhyLegalDesign'
+import Diagram from './components/Diagram'
+import MoreBusiness from './components/MoreBusiness'
 
 const LegalDesign: NextPage = () => {
   const isWideVersion = useBreakpointValue({
@@ -25,16 +25,16 @@ const LegalDesign: NextPage = () => {
     md: false,
     lg: true,
     xl: true,
-    "2xl": true,
-  });
+    '2xl': true,
+  })
   return (
     <>
       <Flex
         as="section"
         w="100%"
-        h={["100%"]}
-        bgImage="url('/images/bgPink.png')"
-        bgSize={isWideVersion ? "contain" : "250%"}
+        h={['100%']}
+        bgImage="url('/images/bgPink.webp')"
+        bgSize={isWideVersion ? 'contain' : '250%'}
         bgRepeat="no-repeat"
         zIndex="-999"
         align="center"
@@ -48,7 +48,7 @@ const LegalDesign: NextPage = () => {
           mx="auto"
           h="100%"
           align="center"
-          py={["7rem", "7rem", "10rem"]}
+          py={['7rem', '7rem', '10rem']}
           flexDir="column"
         >
           <Heading
@@ -56,22 +56,22 @@ const LegalDesign: NextPage = () => {
             fontFamily="Raleway"
             textAlign="center"
             fontWeight="600"
-            maxW={["199px", "199px", "320px"]}
-            fontSize={["30px", "30px", "36px", "48px"]}
-            lineHeight={["40px", "40px", "48px", "55px"]}
+            maxW={['199px', '199px', '320px']}
+            fontSize={['30px', '30px', '36px', '48px']}
+            lineHeight={['40px', '40px', '48px', '55px']}
             w="100%"
             h="auto"
           >
-            O que é{" "}
+            O que é{' '}
             <Text as="span" color="pink.900">
               Legal Design?
             </Text>
           </Heading>
           <Text
             fontWeight="400"
-            fontSize={["0.938rem", "0.938rem", "1rem"]}
+            fontSize={['0.938rem', '0.938rem', '1rem']}
             lineHeight="24px"
-            maxW={["329px", "329px", "529px", "855px"]}
+            maxW={['329px', '329px', '529px', '855px']}
             w="100%"
             h="auto"
             textAlign="center"
@@ -85,7 +85,7 @@ const LegalDesign: NextPage = () => {
           </Text>
           {isWideVersion ? (
             <>
-              {" "}
+              {' '}
               <Flex
                 px="2rem"
                 w="100%"
@@ -144,7 +144,7 @@ const LegalDesign: NextPage = () => {
           ) : (
             <>
               <Flex
-                flexDir={["column", "column", "column", "row"]}
+                flexDir={['column', 'column', 'column', 'row']}
                 mx="auto"
                 w="100%"
                 align="center"
@@ -160,8 +160,8 @@ const LegalDesign: NextPage = () => {
                 </Text>
                 <Flex
                   transform="translateX(-80px)"
-                  mt={["-2rem", "-2rem", "2rem", "2rem"]}
-                  maxW={["500px", "500px", "800px"]}
+                  mt={['-2rem', '-2rem', '2rem', '2rem']}
+                  maxW={['500px', '500px', '800px']}
                   position="relative"
                 >
                   <Icon as={ContractBeforeIcon} />
@@ -171,20 +171,20 @@ const LegalDesign: NextPage = () => {
                   fontWeight="600"
                   fontFamily="Raleway"
                   color="pink.900"
-                  mt={["-2rem", "-2rem", "2rem", "2rem"]}
+                  mt={['-2rem', '-2rem', '2rem', '2rem']}
                 >
                   depois
                 </Text>
               </Flex>
               <Flex
                 transform={[
-                  "translateX(110px)",
-                  "translateX(110px)",
-                  "translateX(90px)",
-                  "translateX(110px)",
+                  'translateX(110px)',
+                  'translateX(110px)',
+                  'translateX(90px)',
+                  'translateX(110px)',
                 ]}
                 mt="-1.5rem"
-                maxW={["600px", "600px", "700px", "800px"]}
+                maxW={['600px', '600px', '700px', '800px']}
                 position="relative"
               >
                 <Icon w="100%" h="auto" as={ContractAfterIcon} />
@@ -197,6 +197,6 @@ const LegalDesign: NextPage = () => {
       <Diagram />
       <MoreBusiness />
     </>
-  );
-};
-export default LegalDesign;
+  )
+}
+export default LegalDesign

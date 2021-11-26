@@ -29,7 +29,7 @@ export default function HomeScreenTrainning() {
   return (
     <Flex
       w="100%"
-      bgImage="url('/images/bgPink.png')"
+      bgImage="url('/images/bgPink.webp')"
       h={['100%', '100%', '100%', '100%', '110vh']}
       bgSize={['250%', 'cover', 'cover', '100%', '100%']}
       bgRepeat="no-repeat"

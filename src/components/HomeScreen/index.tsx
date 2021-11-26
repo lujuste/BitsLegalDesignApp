@@ -62,7 +62,7 @@ export default function HomeScreen(): JSX.Element {
         as="section"
         w="100%"
         h={['100%', '100%', '100%', '100%', '95vh']}
-        bgImage="url('/images/bgPink.png')"
+        bgImage="url('/images/bgPink.webp')"
         bgSize="cover"
         bgRepeat="no-repeat"
         zIndex="-999"
