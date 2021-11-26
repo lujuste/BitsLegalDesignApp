@@ -27,7 +27,7 @@ import dynamic from 'next/dynamic'
 // })
 
 const CustomersDynamic = dynamic(() => import('../components/Customers'), {
-  ssr: false,
+  ssr: true,
   loading: () => (
     <Flex w="100%" maxW="100vw" h="100vh" justify="center" align="center">
       <Spinner
