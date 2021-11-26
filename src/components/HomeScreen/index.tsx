@@ -21,8 +21,6 @@ import BoxPersonOutline from './FloatBoxItems/BoxPersonOutline'
 import FloatWhatsapp from './FloatWhatsapp'
 import GroupContract from './GroupContract'
 
-import { useInViewport } from 'react-in-viewport'
-
 type Merge<P, T> = Omit<P, keyof T> & T
 type MotionFlexProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
 
