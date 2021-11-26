@@ -259,7 +259,7 @@ export default function Header() {
                 <Drawer
                   size="full"
                   isOpen={isOpen}
-                  placement="top"
+                  placement="left"
                   onClose={onClose}
                 >
                   <DrawerOverlay>
@@ -269,6 +269,9 @@ export default function Header() {
                         fontSize="1.25rem"
                         mt="6"
                         zIndex="500000"
+                        _focus={{
+                          border: 'none',
+                        }}
                       />
                       <DrawerHeader mt="7"></DrawerHeader>
                       <DrawerBody>

@@ -1,6 +1,7 @@
-import Reveal from "react-reveal/Fade";
+import Reveal from 'react-reveal/Fade'
+import Link from 'next/link'
 
-import { MotionVStack, MotionText } from "../../../styles/animation";
+import { MotionVStack, MotionText } from '../../../styles/animation'
 
 export default function MobileNav() {
   const container = {
@@ -13,7 +14,7 @@ export default function MobileNav() {
         staggerChildren: 0.2,
       },
     },
-  };
+  }
 
   const item = {
     hidden: { y: 20, opacity: 0 },
@@ -21,10 +22,38 @@ export default function MobileNav() {
       y: 0,
       opacity: 1,
     },
-  };
+  }
+
+  const menu = [
+    {
+      page: 'Legal Design',
+      url: '/legaldesign',
+    },
+    {
+      page: 'Consultoria',
+      url: '/consultoria',
+    },
+    {
+      page: 'Treinamentos',
+      url: '/treinamentos',
+    },
+    {
+      page: 'Cursos',
+      url: '/cursos',
+    },
+    {
+      page: 'Blog',
+      url: '/blog',
+    },
+    {
+      page: 'Contrato automático',
+      url: '/',
+    },
+  ]
+
   return (
     <>
-      <Reveal top>
+      <Reveal fade>
         <MotionVStack
           display="flex"
           flexDir="column"
@@ -34,34 +63,29 @@ export default function MobileNav() {
           alignContent="center"
           justifyContent="center"
           mt="-5rem"
-          spacing={"7"}
+          spacing={'7'}
           variants={container}
           initial="hidden"
           animate="visible"
         >
-          {[
-            "Legal Design",
-            "Consultoria",
-            "Treinamentos",
-            "Cursos",
-            "Blog",
-            "Contrato Automático",
-          ].map((index) => (
-            <MotionText
-              key={index}
-              initial="hidden"
-              animate="visible"
-              variants={item}
-              color="white"
-              fontWeight="bold"
-              fontSize="24"
-              whileTap={{ scale: 0.9, rotate: 0 }}
-            >
-              {index}
-            </MotionText>
+          {menu.map(index => (
+            <Link passHref href={index.url}>
+              <MotionText
+                key={index.url}
+                initial="hidden"
+                animate="visible"
+                variants={item}
+                color="white"
+                fontWeight="bold"
+                fontSize="24"
+                whileTap={{ scale: 0.9, rotate: 0 }}
+              >
+                {index.page}
+              </MotionText>
+            </Link>
           ))}
         </MotionVStack>
       </Reveal>
     </>
-  );
+  )
 }

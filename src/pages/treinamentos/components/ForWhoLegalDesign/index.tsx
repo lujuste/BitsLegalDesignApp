@@ -23,6 +23,7 @@ export default function ForWhoLegalDesign() {
             fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
             mb="3.5rem"
             fontWeight="600"
+            maxW={['270px', '300px', '600px', '1090px']}
           >
             <Text color="pink.900" as="span">
               Para quem
