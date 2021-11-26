@@ -62,12 +62,6 @@ const data = [
 ]
 
 export default function Slider() {
-  const isWideVersion = useBreakpointValue({
-    base: false,
-    lg: true,
-    xl: true,
-  })
-
   return (
     <Swiper
       speed={1500}

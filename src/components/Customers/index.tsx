@@ -299,7 +299,7 @@ export default function Customers() {
                 <Image
                   alt={docs.description}
                   w="100px"
-                  h="auto"
+                  h="100px"
                   src={`/images/${docs.image}.svg`}
                 />
               </Box>
