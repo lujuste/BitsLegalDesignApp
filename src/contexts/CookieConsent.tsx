@@ -4,42 +4,42 @@ import {
   useContext,
   useEffect,
   useState,
-} from "react";
-import { parseCookies, setCookie } from "nookies";
+} from 'react'
+import { parseCookies, setCookie } from 'nookies'
 
 interface CookieConsentProps {
-  children: ReactNode;
+  children: ReactNode
 }
 
-const CookieConsentContext = createContext({});
+const CookieConsentContext = createContext({})
 
 export function CookieConsentProvider({ children }: CookieConsentProps) {
-  const [isShouldMessage, setIsShouldMessage] = useState<boolean>(false);
+  const [isShouldMessage, setIsShouldMessage] = useState<boolean>(false)
 
   function onHandleClickCookies() {
-    const cookies = parseCookies();
-    console.log({ cookies });
+    const cookies = parseCookies()
+    console.log({ cookies })
 
-    setCookie(null, "fromClient", "value", {
+    setCookie(null, 'fromClient', 'value', {
       maxAge: 30 * 24 * 60 * 60,
-      path: "/",
-    });
+      path: '/',
+    })
 
     const onOpen = () => {
-      setIsShouldMessage(false);
-    };
+      setIsShouldMessage(false)
+    }
 
-    console.log({ cookies });
+    console.log({ cookies })
   }
 
-  const cookies = parseCookies();
+  const cookies = parseCookies()
 
   useEffect(() => {
     if (!cookies) {
-      setTimeout(() => setIsShouldMessage(true), 3000);
+      setTimeout(() => setIsShouldMessage(true), 3000)
     }
-    return;
-  }, [cookies]);
+    return
+  }, [cookies])
 
   return (
     <CookieConsentContext.Provider
@@ -47,7 +47,7 @@ export function CookieConsentProvider({ children }: CookieConsentProps) {
     >
       {children}
     </CookieConsentContext.Provider>
-  );
+  )
 }
 
-export const useCookieConsent = () => useContext(CookieConsentContext);
+export const useCookieConsent = () => useContext(CookieConsentContext)

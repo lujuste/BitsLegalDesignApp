@@ -25,6 +25,10 @@ import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
 // ),
 // })
 
+export const config = {
+  unstable_runtimeJS: false,
+}
+
 const Home: NextPage = () => {
   return (
     <>

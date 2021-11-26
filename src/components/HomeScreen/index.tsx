@@ -7,6 +7,7 @@ import {
   useBreakpointValue,
   SlideFade,
   useDisclosure,
+  Spinner,
 } from '@chakra-ui/react'
 import Reveal from 'react-reveal/Reveal'
 import Fade from 'react-reveal/Fade'
@@ -20,6 +21,23 @@ import BoxTime from './FloatBoxItems/BoxTime'
 import BoxPersonOutline from './FloatBoxItems/BoxPersonOutline'
 import FloatWhatsapp from './FloatWhatsapp'
 import GroupContract from './GroupContract'
+
+import dynamic from 'next/dynamic'
+
+const ContractSSR = dynamic(() => import('./GroupContract'), {
+  ssr: false,
+  loading: () => (
+    <Flex w="100%" maxW="100vw" h="100vh" justify="center" align="center">
+      <Spinner
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="pink.900"
+        size="md"
+      />
+    </Flex>
+  ),
+})
 
 type Merge<P, T> = Omit<P, keyof T> & T
 type MotionFlexProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
@@ -156,7 +174,7 @@ export default function HomeScreen(): JSX.Element {
                   w="100%"
                   h="auto"
                 >
-                  <Icon position="absolute" as={GroupContract} />
+                  <Icon position="absolute" as={ContractSSR} />
                 </Flex>
               </Reveal>
             </Flex>
