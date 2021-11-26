@@ -1,8 +1,8 @@
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Flex, Heading, Text, Box, Avatar, VStack } from "@chakra-ui/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Flex, Heading, Text, Box, Avatar, VStack } from '@chakra-ui/react'
 
-import Reveal from "react-reveal/Reveal";
+import Reveal from 'react-reveal/Reveal'
 
 export default function SliderTestimonialsDesk() {
   return (
@@ -11,7 +11,7 @@ export default function SliderTestimonialsDesk() {
       speed={1000}
       navigation
       pagination={{ clickable: true }}
-      style={{ width: "100%", flex: "1" }}
+      style={{ width: '100%', flex: '1' }}
       initialSlide={2}
       modules={[Navigation, Pagination, A11y]}
       containerModifierClass="swiper-testimonials-"
@@ -19,11 +19,11 @@ export default function SliderTestimonialsDesk() {
       centeredSlides={true}
       watchSlidesProgress
       breakpoints={{
-        "900": {
+        '900': {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        "1400": {
+        '1400': {
           spaceBetween: 10,
         },
       }}
@@ -213,7 +213,7 @@ export default function SliderTestimonialsDesk() {
                 <Avatar
                   size="xl"
                   name="Bits Academy"
-                  src="/images/edivane-liandro.png"
+                  src="/images/edivane-liandro.webp"
                 />
                 <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                   Edivane Liandro
@@ -414,5 +414,5 @@ export default function SliderTestimonialsDesk() {
         }
       </SwiperSlide>
     </Swiper>
-  );
+  )
 }
